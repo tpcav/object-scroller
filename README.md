@@ -1,5 +1,5 @@
 # object-scroller
 
-> Currently, a single page portfolio scrolling website
+> Learning scroll animations with [Three.js](https://threejs.org/docs/) 
 
 ### [DEMO](https://tpcav.github.io/object-scroller/)
