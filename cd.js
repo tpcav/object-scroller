@@ -30,7 +30,7 @@ scene.add(ambient)
 
 // This light can cast shadows
 const light = new THREE.DirectionalLight( 0xffffff);
-light.position.set(0,0,12)
+light.position.set(0,0,2)
 scene.add(light);
 
 
