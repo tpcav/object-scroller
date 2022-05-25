@@ -52,7 +52,19 @@ const materials = urls.map(url => {
 
 
 // Renders the CD Case geometry
-const geometry = new THREE.BoxGeometry(5,5,0.5);
+//const geometry = new THREE.BoxGeometry(5,5,0.4);
+const geometry = new THREE.BoxGeometry(5,5,0.4);
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    const geometry = new THREE.BoxGeometry(1,1,0.4);
+  } else {
+    const geometry = new THREE.BoxGeometry(5,5,0.4);
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 const cube = new THREE.Mesh( geometry, materials );
 scene.add( cube );

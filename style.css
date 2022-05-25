@@ -14,7 +14,6 @@ body {
   background-color: black;
   color: white;
   line-height: 1.25;
-
   min-height: calc(3000px + 100vh);
 }
 
@@ -44,7 +43,6 @@ section.cd {
   top: 0;
   left: 0;
   z-index: 0;
-
 }
 
 section.content {
