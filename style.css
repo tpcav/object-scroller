@@ -1,10 +1,10 @@
 /* CSS Styling */
 
-/* Header Font */
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
-
 /* Section Font */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Koulen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+
 
 html {
   background-color: black;
@@ -18,12 +18,14 @@ body {
 }
 
 h1 {
-  font-family: 'Koulen', cursive;
-  font-size: 100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  font-size: 150px;
 }
 
 h2 {
-  font-family: 'Koulen', cursive;
+  font-family: 'IBM Plex Sans', bold;
+  font-weight: bold;
   font-size: 80px;
 }
 
@@ -41,7 +43,7 @@ li {
 section.cd {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100px;
   z-index: 0;
 }
 
