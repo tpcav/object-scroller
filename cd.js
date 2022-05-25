@@ -30,7 +30,7 @@ scene.add(ambient)
 
 // This light can cast shadows
 const light = new THREE.DirectionalLight( 0xffffff);
-light.position.set(0,0,2)
+light.position.set(0,0,6)
 scene.add(light);
 
 
@@ -52,7 +52,7 @@ const materials = urls.map(url => {
 
 
 // Renders the CD Case geometry
-const geometry = new THREE.BoxGeometry(3,3,0.4);
+const geometry = new THREE.BoxGeometry(5,5,0.5);
 
 const cube = new THREE.Mesh( geometry, materials );
 scene.add( cube );
@@ -70,10 +70,10 @@ function animate() {
 
   currentTimeline += (aimTimeline - currentTimeline) * 0.10
 
-  const rx = currentTimeline * -0.5 + 0.1
-  const ry = (currentTimeline * 0.9 + 0.1) * Math.PI * 2
-  
-  cube.rotation.set(rx,ry,0)
+  const rx = currentTimeline * -0.5 + 0.5
+  const ry = (currentTimeline * 0.9 + 0.85) * Math.PI * 2
+
+  cube.rotation.set(rx, ry,0 )
 
 
 

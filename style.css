@@ -14,7 +14,7 @@ body {
   background-color: black;
   color: white;
   line-height: 1.25;
-  min-height: calc(3000px + 100vh);
+  min-height: calc(3000px + 200vh);
 }
 
 h1 {
@@ -43,7 +43,7 @@ li {
 section.cd {
   position: fixed;
   top: 0;
-  left: 100px;
+  left: 0;
   z-index: 0;
 }
 
